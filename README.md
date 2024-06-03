@@ -24,6 +24,17 @@
 
 <!---https://leviarista.github.io/github-profile-header-generator/ --->
 <!--https://github.com/lowlighter/metrics-->
+[but also a little personlied gif]
+
+- I'm currently workign on...
+- I’m available for...
+- Ask me about...
+- How to reach me...
+-  Know about my experiences...
+
+[Connect with me icon and links]
+
+[my tools]
 
 
 
