@@ -1,11 +1,8 @@
 name: Metrics
 on:
-  # Schedule daily updates
   schedule: [{cron: "0 0 * * *"}]
-  # (optional) Run workflow manually
   workflow_dispatch:
-  # (optional) Run workflow when pushing on master/main
-  push: {branches: ["master", "main"]}
+  push: {branches: ["main"]}
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
@@ -21,22 +18,14 @@ jobs:
           retries_delay: 300
           output_action: pull-request
           base: ""
-          filename: interesting-facts.svg
-          plugin_habits: no
+          filename: interesting-facts-and-stars.svg
+          plugin_habits: yes
           plugin_habits_facts: yes
           plugin_habits_charts: no
-          config_timezone: America/Los_angeles
-          
-      - uses: lowlighter/metrics@latest
-        with:
-          token: ${{ secrets.METRICS_TOKEN_NOSCOPE }}
-          retries: 3
-          retries_delay: 300
-          output_action: pull-request
-          base: ""
-          filename: recent-stars.svg
           plugin_stars: yes
           plugin_stars_limit: 3
+          config_timezone: America/Los_angeles
+          config_order: habits, stars
           
       - uses: lowlighter/metrics@latest
         with:
@@ -56,6 +45,5 @@ jobs:
           filename: leetcode-data.svg
           plugin_leetcode: yes
           plugin_leetcode_sections: solved, skills
-          plugin_leetcode_user: dscpsyl
           
         
