@@ -14,8 +14,6 @@ jobs:
       - uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN_NOSCOPE }}
-          retries: 3
-          retries_delay: 300
           output_action: pull-request
           base: ""
           filename: interesting-facts-and-stars.svg
@@ -29,8 +27,7 @@ jobs:
           
       - uses: lowlighter/metrics@latest
         with:
-          retries: 3
-          retries_delay: 300
+          token: ${{ secrets.METRICS_TOKEN_NOSCOPE }}
           output_action: pull-request
           base: ""
           filename: today-fortune.svg
@@ -38,8 +35,7 @@ jobs:
       
       - uses: lowlighter/metrics@latest
         with:
-          retries: 3
-          retries_delay: 300
+          token: ${{ secrets.METRICS_TOKEN_NOSCOPE }}
           output_action: pull-request-merge
           base: ""
           filename: leetcode-data.svg
