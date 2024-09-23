@@ -16,7 +16,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN_NOSCOPE }}
           output_action: pull-request
-          base: ""
+          base: ".github/"
           filename: interesting-facts-and-stars.svg
           plugin_habits: yes
           plugin_habits_facts: yes
@@ -30,7 +30,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN_NOSCOPE }}
           output_action: pull-request
-          base: ""
+          base: ".github/"
           filename: today-fortune.svg
           plugin_fortune: yes
       
@@ -38,7 +38,7 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN_NOSCOPE }}
           output_action: pull-request-merge
-          base: ""
+          base: ".github/"
           filename: leetcode-data.svg
           plugin_leetcode: yes
           plugin_leetcode_sections: solved, skills
