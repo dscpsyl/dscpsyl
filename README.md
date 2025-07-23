@@ -8,16 +8,15 @@
 
 # 
 
-<div style="display: flex; gap: 20px; align-items: center;">
-  <div style="flex: 1;">
-    <a href="https://icanhazdadjoke.com/ ">
-      <img src="https://readme-jokes.vercel.app/api" alt="Jokes Card" />
-    </a>
-  </div>
-  <div style="flex: 1;">
-    <img src="./today-fortune.svg" alt="Fortune" />
-  </div>
-</div>
+<p align="center">
+  <a href="https://icanhazdadjoke.com/" target="_blank">
+  <img src="https://readme-jokes.vercel.app/api" alt="README.md Joke">
+  </a>
+</p>
+
+<p align="center" style="width: 110px; overflow: hidden; display: inline-block;">
+  <img src="./today-fortune.svg" alt="Today's Fortune">
+</p>
 
 <p align="center">
   <a href="https://www.conventionalcommits.org/" target="_blank">
