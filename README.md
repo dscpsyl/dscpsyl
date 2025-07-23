@@ -24,3 +24,5 @@
 
 ![Interesting facts and stars](./interesting-facts-and-stars.svg)
 
+![Contribution Graph Snake Game](https://raw.githubusercontent.com/dscpsyl/dscpsyl/refs/heads/snek/github-contribution-grid-snake-dark.svg)
+
