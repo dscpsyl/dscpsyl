@@ -1,0 +1,43 @@
+name: Github Metrics and Fortune
+on:
+  schedule: [{cron: "0 0 * * *"}]
+  workflow_dispatch:
+  push: {branches: ["main"]}
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    environment: 
+      name: production
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN_NOSCOPE }}
+          output_action: pull-request
+          base: ".github/"
+          filename: interesting-facts-and-stars.svg
+          plugin_habits: yes
+          plugin_habits_facts: yes
+          plugin_habits_charts: no
+          plugin_stars: yes
+          plugin_stars_limit: 3
+          config_timezone: America/Los_angeles
+          config_order: habits, stars
+          
+  daily-fortune:
+    runs-on: ubuntu-latest
+    environment: 
+      name: production
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN_NOSCOPE }}
+          output_action: pull-request
+          base: ".github/"
+          filename: today-fortune.svg
+          plugin_fortune: yes
