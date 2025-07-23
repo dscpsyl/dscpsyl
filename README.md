@@ -1,14 +1,8 @@
 [![Header](.github/header.png)](https://dscpsyl.github.io/)
 
 <p align="center">
-  <a href="https://www.printhello.world" target="_blank">
-  <img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Website">
-  </a>
   <a href="https://buymeacoffee.com/dscpsyl" target="_blank">
   <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me Coffee">
-  </a>
-  <a href="https://www.linkedin.com/in/davidjsim/" target="_blank">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
   </a>
 </p>
 
