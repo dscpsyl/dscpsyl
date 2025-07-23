@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  generate-snake-path:
+  generate-snake:
     permissions: 
       contents: write
     runs-on: ubuntu-latest
